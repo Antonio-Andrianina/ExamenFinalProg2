@@ -1,12 +1,13 @@
 package principal;
 
+import java.time.Instant;
 import java.util.Date;
 
 public class Notes {
-    private Examen examen;
-    private Etudiant etudiant;
-    private double note;
-    private Date dateAttribution;
+    private final Examen examen;
+    private final Etudiant etudiant;
+    private final double note;
+    private final Date dateAttribution;
 
     public Notes(Etudiant etudiant, Examen examen, double note, Date dateAttribution) {
         this.etudiant = etudiant;

@@ -1,15 +1,16 @@
 package principal;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
 
 public class Examen {
-    private int id;
-    private String titre;
-    private Cours cours;
-    private LocalDateTime dateExamen;
-    private double coefficient;
+    private final int id;
+    private final String titre;
+    private final Cours cours;
+    private final Instant dateExamen;
+    private final double coefficient;
 
-    public Examen(int id, String titre, Cours cours, LocalDateTime dateExamen, double coefficient) {
+    public Examen(int id, String titre, Cours cours, Instant dateExamen, double coefficient) {
         this.id = id;
         this.titre = titre;
         this.cours = cours;
@@ -29,11 +30,15 @@ public class Examen {
         return cours;
     }
 
-    public LocalDateTime getDateExamen() {
+    public Instant getDateExamen() {
         return dateExamen;
     }
 
     public double getCoefficient() {
         return coefficient;
+    }
+
+    double getExamGrade(Examen exam, Etudiant etudiant, Instant t){
+        return
     }
 }

@@ -3,7 +3,7 @@ package principal;
 import java.util.Date;
 
 public class Etudiant extends Utilisateur{
-    private String groupe;
+    private final String groupe;
 
     public Etudiant(int id, String nom, String prenom, Date dateDeNaissance, String email, String telephone, String groupe) {
         super(id, nom, prenom, dateDeNaissance, email, telephone);
