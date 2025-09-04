@@ -1,10 +1,10 @@
 package principal;
 
 public class Cours {
-    private int id;
-    private String Label;
-    private int credits;
-    private Enseignant enseignant;
+    private final int id;
+    private final String Label;
+    private final int credits;
+    private final Enseignant enseignant;
 
     public Cours(int id, String label, int credits, Enseignant enseignant) {
         this.id = id;
